@@ -1,5 +1,5 @@
 <div align="center">
-  <h1>VolETA: One- and Few-shot Food Volume Estimation</h1>
+  <h1>VolTex: Food Volume Estimation using Text-Guided Segmentation and Neural Surface Reconstruction</h1>
   <p>
     <a href="https://www.linkedin.com/in/amughrabi/">Ahmad AlMughrabi*</a>, 
     <a href="https://www.linkedin.com/in/umair-haroon-8729611ab">Umair Haroon*</a>, 
@@ -12,20 +12,6 @@
     Institut de Neurosciències ²
   </p>
 </div>
-
------
-
-<div align="center">
-  <h2>Meta Food CVPR Workshop Challenge 2024: <a href="https://sites.google.com/view/cvpr-metafood-2024/challenge">Physically Informed 3D Food Reconstruction</a></h2>
-</div>
-
-![CVPR winner TwitterX](https://github.com/umairharon/VolETA-MetaFood/assets/88880739/7982f8c5-4b41-4b0c-86e9-9eadba990f18)
-
-<div align="center">
-  <h2>We Won the Meta Food CVPR Workshop Challenge 2024!</h2>
-</div>
-
-We are thrilled to announce that our team has won the prestigious Meta Food CVPR Workshop Challenge 2024! This achievement is a testament to our hard work, innovative methodologies, and dedication to advancing the field of food recognition using computer vision.
 
 -----
 
