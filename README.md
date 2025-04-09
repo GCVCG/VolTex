@@ -46,7 +46,7 @@ We encourage you to check out the documentation for installation instructions, u
 
 ### Our Framework
 
-![VolETA](https://github.com/umairharon/VolETA-MetaFood/assets/88880739/36a646eb-d2eb-4c2d-8995-47b223b61c49)
+![VolTex Framework](https://github.com/GCVCG/VolTex/blob/main/assets/VolETex_framework.pdf)
 
 
 ## Installation:
