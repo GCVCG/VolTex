@@ -46,7 +46,8 @@ We encourage you to check out the documentation for installation instructions, u
 
 ### Our Framework
 
-![VolTex Framework](https://github.com/GCVCG/VolTex/blob/main/assets/VolETex_framework.pdf)
+![VolTex Framework](assets/VolETex_framework.png)
+
 
 
 ## Installation:
@@ -54,7 +55,7 @@ We encourage you to check out the documentation for installation instructions, u
 To get started, clone this repository:
 
 ```bash 
-git clone https://github.com/umairharon/VolETA-MetaFood
+git clone https://github.com/GCVCG/VolTex.git
 
 ```
 
@@ -82,13 +83,10 @@ Please note that this project relies on several submodules that are not included
 1. [Pixel-Perfect Structure-from-Motion with Featuremetric Refinement](https://arxiv.org/pdf/2108.08291)
       - Repository: [Pixel-Perfect-SfM](https://github.com/cvg/pixel-perfect-sfm)
 
-2. [Segment Anything (SAM)](https://ai.meta.com/research/publications/segment-anything/)
-      - Repository: [Segment-Anything](https://github.com/facebookresearch/segment-anything)
+2. [Tracking Anything with Decoupled Video Segmentation (DEVA)](https://openaccess.thecvf.com/content/ICCV2023/html/Cheng_Tracking_Anything_with_Decoupled_Video_Segmentation_ICCV_2023_paper.html)
+      - Repository: [DEVA](https://github.com/hkchengrex/Tracking-Anything-with-DEVA)
 
-3. [XMem++: Production-level Video Segmentation From Few Annotated Frames](https://arxiv.org/pdf/2307.15958)
-      - Repository: [XMem2](https://github.com/mbzuai-metaverse/XMem2?tab=readme-ov-file)
-
-4. [NeuS2: Fast Learning of Neural Implicit Surfaces for Multi-view Reconstruction](https://arxiv.org/abs/2212.05231)
+3. [NeuS2: Fast Learning of Neural Implicit Surfaces for Multi-view Reconstruction](https://arxiv.org/abs/2212.05231)
       - Repository: [NeuS2](https://github.com/19reborn/NeuS2?tab=readme-ov-file)
 
 ## Usage
@@ -101,45 +99,34 @@ python main.py --config configs/config.yaml #Example
 ## Methodology
 
 ### Data:
-We used the dataset Provided by MetaFood CVPR Workshop Challenge 2024. It comprises 20 food scenes  categorized by difficulty (simple, medium, hard).  
+We used the dataset Provided by MetaFood CVPR Workshop Challenge 2024. We used 13 food scenes categorized by difficulty (simple, medium).  
 
 You can download the data from Kaggle: [MTF Challenge Dataset](https://www.kaggle.com/competitions/cvpr-metafood-3d-food-reconstruction-challenge/data)
 
 ### Evaluation
 A two-phase evaluation process focuses on the precision of reconstructed 3D models in terms of shape and portion size.
 
-#### Phase-I (Portion Size Evaluation):
+#### Portion Size Evaluation:
 - Metric: Mean Absolute Percentage Error (MAPE).
 - Focus: Accuracy of volume estimation of 3D models.
 
-#### Phase-II (Shape Evaluation):
+#### Shape Evaluation:
 - Eligibility: Top teams from Phase-I.
 - Requirement: Submission of complete 3D mesh files for each food item.
 - Metric: Chamfer distance.
 - Focus: Accuracy of 3D shape reconstruction.
 
-## Results
+### DEVA Comparison with Reference Masks
 
-### Phase-I
-- MAPE: 0.10973
+![Results](assets/DEVA.png)
 
-### Phase-II
-- Chamfer Distance With Transformation Matrix:
-  - Average: 0.007258650766
-  - Sum: 0.13066
-- Chamfer Distance Without Transformation Matrix:
-    - Average: 0.09528961389
-    - Sum: 1.71521
+### Quantitative Results
 
-### Visual Results
+![Results](assets/Quantitative_Results.png)
 
-| ![1](https://github.com/GCVCG/VolETA-MetaFood/assets/88880739/da79f623-0cbe-4ff1-bd07-ad230fabd318) | ![2](https://github.com/GCVCG/VolETA-MetaFood/assets/88880739/4133aace-0770-4c0c-91fa-5f92e7133904) | ![3](https://github.com/GCVCG/VolETA-MetaFood/assets/88880739/54f4c111-9d29-44a8-96b6-a99455e258ba) | ![4](https://github.com/GCVCG/VolETA-MetaFood/assets/88880739/dc8f2fc7-b8f0-476d-a5ff-3122a6330f67) | ![5](https://github.com/GCVCG/VolETA-MetaFood/assets/88880739/dfb7972d-7687-468f-b572-e45e82808ab6) | ![6](https://github.com/GCVCG/VolETA-MetaFood/assets/88880739/ece9a850-4495-4b75-abe5-e5ad706199c8) |
-| -------------- | -------------- | -------------- | -------------- | -------------- | -------------- |
-| ![7](https://github.com/GCVCG/VolETA-MetaFood/assets/88880739/5467754d-022a-4b3d-9e98-e3e2507c3745) | ![8](https://github.com/GCVCG/VolETA-MetaFood/assets/88880739/51e9c2ad-b89c-4960-ad38-3fe93fc20f4f) | ![9](https://github.com/GCVCG/VolETA-MetaFood/assets/88880739/464239c2-7ef7-46d7-9180-bde2cf59c263) | ![10](https://github.com/GCVCG/VolETA-MetaFood/assets/88880739/25cc7f42-16f6-4b0a-b8c2-fb6d93d463bc) | ![11](https://github.com/GCVCG/VolETA-MetaFood/assets/88880739/da9d1f1d-b7da-4c2a-bbaa-fae27464c4be) | ![12](https://github.com/GCVCG/VolETA-MetaFood/assets/88880739/e0c63852-026a-476f-8989-11c108ac042f) |
-| ![14](https://github.com/GCVCG/VolETA-MetaFood/assets/88880739/c33114cb-9be9-4e3f-b3da-108818d65b13)| ![16](https://github.com/GCVCG/VolETA-MetaFood/assets/88880739/8d524726-b24f-4ab5-8613-b3290a986266) | ![17](https://github.com/GCVCG/VolETA-MetaFood/assets/88880739/834da62a-6e03-4e68-b87f-1b1741f18079) | ![18](https://github.com/GCVCG/VolETA-MetaFood/assets/88880739/5026569f-96cc-49c8-ad99-715d939d0e77) | ![19](https://github.com/GCVCG/VolETA-MetaFood/assets/88880739/e195e724-c728-40ef-99c2-d917e7f2788d) | ![20](https://github.com/GCVCG/VolETA-MetaFood/assets/88880739/858b4c77-57af-4893-ab2f-c60dd5e4daaa) |
+### Qualitative Results
 
-#### Comparison Over Ground Truth
-![Results](https://github.com/GCVCG/VolETA-MetaFood/assets/88880739/abf9cd58-fc0f-490e-992c-3be10a815b93)
+![Results](assets/Visual_Results.png)
 
 ## Acknowlegements
 This work was partially funded by the EU project MUSAE (No. 01070421), 2021-SGR-01094 (AGAUR), Icrea Academia’2022 (Generalitat de Catalunya), Robo STEAM (2022-1-BG01-KA220-VET000089434, Erasmus+ EU), DeepSense (ACE053/22/000029, ACCIÓ), CERCA Programme/Generalitat de Catalunya, and Grants PID2022141566NB-I00 (IDEATE), PDC2022-133642-I00 (DeepFoodVol), and CNS2022-135480 (A-BMC) funded by MICIU/AEI/10.13039/501100 011033, by FEDER (UE), and by European Union NextGenerationEU/ PRTR. R. Marques acknowledges the support of the Serra Húnter Programme. A. AlMughrabi acknowledges the support of FPI Becas, MICINN, Spain. U. Haroon acknowledges the support of FI-SDUR Becas, MICINN, Spain.
