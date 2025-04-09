@@ -118,7 +118,9 @@ A two-phase evaluation process focuses on the precision of reconstructed 3D mode
 
 ### DEVA Comparison with Reference Masks
 
-![Results](assets/DEVA.png)
+<div align="center">
+  <img src="assets/DEVA.png" alt="Results">
+</div>
 
 ### Quantitative Results
 
