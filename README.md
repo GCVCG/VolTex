@@ -30,25 +30,19 @@
 
 ## Introduction
 
-Accurate dietary assessment using 2D images is crucial but challenging due to the need for precise food volume estimation. Our approach addresses these challenges by providing a semi-automated method that is adaptable and user-friendly.
+Accurate food volume estimation is essential for various applications, including dietary monitoring, medical nutrition management, and food intake analysis. Traditional methods for 3D food volume estimation typically excel at calculating volume but often fall short when it comes to selecting specific food portions. 
 
-### Challenges in Food Volume Estimation
+VolTex addresses this gap by providing an innovative framework that enhances food object selection during volume estimation. Our solution allows users to specify a target food item via text input, enabling the precise segmentation of specific food objects within real-world scenes. Once an object is segmented, our method reconstructs it using Neural Surface Reconstruction techniques, producing high-fidelity 3D meshes for accurate volume calculation.
 
-- **2D Image Limitations**: Lack of depth information in standard 2D images.
-- **Reference Object Methods**: 
-  - Use standard-sized items or specific markers for 3D cues.
-  - Computationally intensive and often impractical.
-- **Non-Reference Object Methods**:
-  - Estimate depth using image features and camera properties.
-  - Variable camera orientations and positions pose limitations.
+In our extensive evaluations using the MetaFood3D dataset, VolTex has demonstrated superior performance in isolating and reconstructing food items, leading to improved accuracy in volume estimation. Whether you're a researcher, developer, or enthusiast in the field of food technology, we invite you to explore our framework and contribute to advancing the capabilities of food volume estimation.
 
-### Our Contributions
+### Features
 
-- **Unbounded Food Scenes**:
-  - Flexible camera movement around the food object.
-  - Handles varying capturing speeds and topologies.
-- **Sparse Input Views**:
-  - Requires only one or a few RGBD images.
+- Text-based food item selection for precise segmentation.
+- High-fidelity 3D mesh reconstruction using Neural Surface Reconstruction
+- Thorough evaluation on the MetaFood3D dataset
+
+We encourage you to check out the documentation for installation instructions, usage details, and contributions. Let’s revolutionize the way we estimate food volume together!
 
 ### Our Framework
 
