@@ -91,10 +91,10 @@ Please note that this project relies on several submodules that are not included
 
 ## Usage
 
-After installing the necessary packages and submodules, you can run the main script to the Pipeline:
+After installing the necessary packages and submodules, you can run the main script for the Pipeline:
 
 ```bash
-python main.py --config configs/config.yaml #Example
+bash volETA_NeRF.sh
 ```
 ## Methodology
 
