@@ -1,0 +1,33 @@
+cff-version: 1.2.0
+message: "If you use this software, please cite the paper below."
+title: "VolTex: food volume estimation using text-guided segmentation and neural surface reconstruction"
+type: software
+license: GPL-3.0-only
+repository-code: "https://github.com/GCVCG/VolTex"
+authors:
+  - family-names: AlMughrabi
+    given-names: Ahmad
+    orcid: "https://orcid.org/0000-0002-9336-3200"
+  - family-names: Haroon
+    given-names: Umair
+  - family-names: Marques
+    given-names: Ricardo
+  - family-names: Radeva
+    given-names: Petia
+preferred-citation:
+  type: conference-paper
+  title: "VolTex: Food Volume Estimation using Text-Guided Segmentation and Neural Surface Reconstruction"
+  authors:
+    - family-names: AlMughrabi
+      given-names: Ahmad
+    - family-names: Haroon
+      given-names: Umair
+    - family-names: Marques
+      given-names: Ricardo
+    - family-names: Radeva
+      given-names: Petia
+  collection-title: "Proceedings of the IEEE/CVF Conference on Computer Vision and Pattern Recognition Workshops (CVPRW)"
+  start: 450
+  end: 457
+  year: 2025
+  doi: "10.1109/CVPRW67362.2025.00049"

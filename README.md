@@ -130,6 +130,26 @@ A two-phase evaluation process focuses on the precision of reconstructed 3D mode
 
 ![Results](assets/Visual_Results.png)
 
+## License
+**Code:** GNU General Public License v3.0 (see `LICENSE`), except for the third-party code below, which remains under the terms of its authors:
+
+- `colmap2nerf.py`, from NVIDIA's [instant-ngp](https://github.com/NVlabs/instant-ngp) (`scripts/colmap2nerf.py`), which keeps its NVIDIA copyright notice and is governed by the [NVIDIA Source Code License](https://github.com/NVlabs/instant-ngp/blob/master/LICENSE.txt) (non-commercial use). Helper functions taken from the same script (for example `closest_point_2_lines`) also appear in `llff2nerf.py`.
+- `blur_fft/` follows the FFT blur detector of the PyImageSearch tutorial "OpenCV Fast Fourier Transform (FFT) for blur detection in images and video streams" (A. Rosebrock, 2020).
+
+The MetaFood challenge data used in the paper are distributed by the MetaFood3D project under its own terms.
+
+## Citation
+```
+@inproceedings{almughrabi2025voltex,
+  title     = {VolTex: Food Volume Estimation using Text-Guided Segmentation and Neural Surface Reconstruction},
+  author    = {AlMughrabi, Ahmad and Haroon, Umair and Marques, Ricardo and Radeva, Petia},
+  booktitle = {Proceedings of the IEEE/CVF Conference on Computer Vision and Pattern Recognition Workshops (CVPRW)},
+  pages     = {450--457},
+  year      = {2025},
+  doi       = {10.1109/CVPRW67362.2025.00049}
+}
+```
+
 ## Acknowlegements
 This work was partially funded by the EU project MUSAE (No. 01070421), 2021-SGR-01094 (AGAUR), Icrea Academia’2022 (Generalitat de Catalunya), Robo STEAM (2022-1-BG01-KA220-VET000089434, Erasmus+ EU), DeepSense (ACE053/22/000029, ACCIÓ), CERCA Programme/Generalitat de Catalunya, and Grants PID2022141566NB-I00 (IDEATE), PDC2022-133642-I00 (DeepFoodVol), and CNS2022-135480 (A-BMC) funded by MICIU/AEI/10.13039/501100 011033, by FEDER (UE), and by European Union NextGenerationEU/ PRTR. R. Marques acknowledges the support of the Serra Húnter Programme. A. AlMughrabi acknowledges the support of FPI Becas, MICINN, Spain. U. Haroon acknowledges the support of FI-SDUR Becas, MICINN, Spain.
     
